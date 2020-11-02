@@ -1,7 +1,6 @@
 package net.braniumacademy.ex5;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class GenericExercises5 {
     public static void main(String[] args) {

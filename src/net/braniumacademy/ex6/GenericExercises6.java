@@ -56,8 +56,7 @@ public class GenericExercises6 {
 
     /**
      * Phương thức chỉ dùng cho các kiểu có thực thi interface Comparable
-     * sắp xếp danh sách các phần tử trong danh sách theo thứ tự tăng dần
-     * từ a-z, 0-9
+     * sắp xếp danh sách các phần tử trong danh sách theo thứ tự giảm dần
      *
      * @param elements danh sách các phần tử cần tìm
      * @param <T>      kiểu các phần tử cần thao tác

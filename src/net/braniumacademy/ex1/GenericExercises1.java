@@ -15,7 +15,7 @@ public class GenericExercises1 {
 
     public static void main(String[] args) {
         Integer[] numbers = {1, 2, 3, 6, 5, 4, 7, 8};
-        Double[] interesRate = {0.25, 1.5, 6.35, 4.75, 5.5};
+        Double[] interestRate = {0.25, 1.5, 6.35, 4.75, 5.5};
         Student[] students = new Student[3];
         students[0] = new Student("S1", "Tran Van Hung", 3.25f);
         students[1] = new Student("S2", "Nguyen Tran Duy", 2.59f);
@@ -25,7 +25,7 @@ public class GenericExercises1 {
         System.out.println("==> Mảng các số nguyên: ");
         showArrayElement(numbers);
         System.out.println("==> Mảng số thực: ");
-        showArrayElement(interesRate);
+        showArrayElement(interestRate);
         System.out.println("==> Danh sách sinh viên: ");
         showArrayElement(students);
     }
