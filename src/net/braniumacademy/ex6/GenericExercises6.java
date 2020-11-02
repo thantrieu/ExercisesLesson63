@@ -1,9 +1,8 @@
-package net.braniumacademy.ex5;
+package net.braniumacademy.ex6;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class GenericExercises5 {
+public class GenericExercises6 {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>();
         numbers.add(1);
@@ -31,10 +30,10 @@ public class GenericExercises5 {
         students.add(s3);
         students.add(s4);
         students.add(s5);
-        // tiến hành sắp xếp tăng dần:
-        sortASC(numbers);
-        sortASC(friends);
-        sortASC(students);
+        // tiến hành sắp xếp giảm dần:
+        sortDESC(numbers);
+        sortDESC(friends);
+        sortDESC(students);
         System.out.println("Danh sách các Integer sau khi sắp xếp");
         showArrayElement(numbers);
         System.out.println("Danh sách String sau khi sắp xếp: ");
@@ -65,10 +64,11 @@ public class GenericExercises5 {
      * @return vị trí đầu tiên của phần tử trong mảng nếu
      * tìm thấy hoặc -1 nếu không tìm thấy
      */
-    public static <T extends Comparable> void sortASC(ArrayList<T> elements) {
+    public static <T extends Comparable> void sortDESC(ArrayList<T> elements) {
         for (int i = 0; i < elements.size() - 1; i++) {
             for (int j = elements.size() - 1; j > i; j--) {
-                if (elements.get(j).compareTo(elements.get(j - 1)) < 0) {
+                // phần tử đứng sau nhỏ hơn phần tử đứng trước
+                if (elements.get(j).compareTo(elements.get(j - 1)) > 0) {
                     // tráo đổi hai phần tử
                     var x = elements.get(j);
                     elements.set(j, elements.get(j - 1));
