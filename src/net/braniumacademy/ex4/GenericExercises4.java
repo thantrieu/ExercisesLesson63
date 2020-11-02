@@ -24,6 +24,8 @@ public class GenericExercises4 {
 
     /**
      * Phương thức chỉ dùng cho các kiểu có thực thi interface Comparable
+     * dùng để đếm số lần xuất hiện của một phần tử x nào đó trong mảng
+     * các phần tử kiểu T
      *
      * @param elements danh sách các phần tử cần tìm
      * @param x        giá trị cần tìm
